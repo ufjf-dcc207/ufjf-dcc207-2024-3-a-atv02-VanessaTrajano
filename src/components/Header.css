@@ -1,0 +1,26 @@
+.header{
+    background-color: #EFEFEF;
+    width: 100vw;
+}
+
+.bloco1{
+    display: flex;
+    height: 3.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+}
+
+#opcoes{
+    width: 20rem;
+}
+
+.navigation{
+    display: flex;
+    list-style: none;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px 0;
+}

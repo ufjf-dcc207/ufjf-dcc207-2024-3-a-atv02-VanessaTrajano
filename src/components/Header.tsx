@@ -1,19 +1,26 @@
+import "./Header.css";
+
 function Header() {
   return (
-    <>
-      <label>
-        Acesso rápido: <br />
-        <select id="opcoes" name="menu">
-          <option value="aaaaa">aaaaa</option>
-          <option value="bbbbb">bbbbb</option>
-          <option value="ccccc">ccccc</option>
-          <option value="dddddd">dddddd</option>
-        </select>
-      </label>
+    <header className="header">
+      <div className="bloco1">
+        <label>
+          Acesso rápido: <br />
+          <select id="opcoes" name="menu">
+            <option value="aaaaa">aaaaa</option>
+            <option value="bbbbb">bbbbb</option>
+            <option value="ccccc">ccccc</option>
+            <option value="dddddd">dddddd</option>
+          </select>
+        </label>
+        <p>
+          [Usuário: 00000000000][Minhas Mensagens][Perfil Atual:
+          202503298][Trocar Perfil][Sair]
+        </p>
+      </div>
 
-      <p>[Usuário: 00000000000][Minhas Mensagens][Perfil Atual: 202503298][Trocar Perfil][Sair]</p>
       <nav>
-        <ul>
+        <ul className="navigation">
           <li>Acadêmico</li>
           <li>Bolsas</li>
           <li>Biblioteca</li>
@@ -24,7 +31,7 @@ function Header() {
           <li>Eventos</li>
         </ul>
       </nav>
-    </>
+    </header>
   );
 }
 
