@@ -1,3 +1,5 @@
+import "./LinhaTabela.css";
+
 type Props ={
     cel1: string;
     cel2: string;
@@ -10,7 +12,7 @@ type Props ={
 
 function LinhaTabela({cel1, cel2, cel3, cel4, cel5, cel6, cel7}:Props) {
   return (
-    <tr>
+    <tr className="linha">
       <td>{cel1}</td>
       <td>{cel2}</td>
       <td>{cel3}</td>
