@@ -1,11 +1,12 @@
 import LinhaTabela from "./LinhaTabela";
+import "./QuadroHorarios.css";
 
 function QuadroHorarios() {
   return (
-    <>
-      <h2>Quadro de Horários</h2>
+    <div className="container">
+      <h2 className="titulo-quadro">Quadro de Horários</h2>
 
-      <section>
+      <section className="quadro">
         <table>
           <LinhaTabela cinza={false} cel1="" cel2="Segunda" cel3="Terça" cel4="Quarta" cel5="Quinta" cel6="Sexta" cel7="Sábado"/>
           <LinhaTabela cinza={true} cel1="07:00" cel2="" cel3="" cel4="" cel5="" cel6="" cel7="" />
@@ -25,9 +26,12 @@ function QuadroHorarios() {
           <LinhaTabela cinza={true} cel1="21:00" cel2="BBB000-X" cel3="CCC000-X" cel4="" cel5="DCC207-A" cel6="AAA000-X" cel7="" />
           <LinhaTabela cinza={false} cel1="22:00" cel2="BBB000-X" cel3="CCC000-X" cel4="" cel5="DCC207-A" cel6="AAA000-X" cel7="" />
         </table>
-        <div></div> {/* turmas com horarios livres */}
+        <div className="horario-livre">
+          <h3>Turmas com Horário Livre</h3>
+          <p>EADXXX000-X</p>
+        </div>
       </section>
-    </>
+    </div>
   );
 }
 
