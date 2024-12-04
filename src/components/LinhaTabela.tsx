@@ -23,8 +23,7 @@ function LinhaTabela({
 }: Props) {
   return (
     <>
-      {cinza ? (
-        <tr className="linha cinza">
+        <tr className={cinza ? "linha cinza" : "linha"}>
           <td>{cel1}</td>
           <td>{cel2}</td>
           <td>{cel3}</td>
@@ -33,17 +32,6 @@ function LinhaTabela({
           <td>{cel6}</td>
           <td>{cel7}</td>
         </tr>
-      ) : (
-        <tr className="linha">
-          <td>{cel1}</td>
-          <td>{cel2}</td>
-          <td>{cel3}</td>
-          <td>{cel4}</td>
-          <td>{cel5}</td>
-          <td>{cel6}</td>
-          <td>{cel7}</td>
-        </tr>
-      )}
     </>
   );
 }
